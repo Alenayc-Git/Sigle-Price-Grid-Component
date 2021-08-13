@@ -1,0 +1,130 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+/* Colours */
+
+:root {
+  /* Primary colours */
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright--Yellow: hsl(71, 73%, 54%);
+
+  /* Neutral colours */
+  --Light--Gray: hsl(204, 43%, 93%);
+  --Grayish--Blue: hsl(218, 22%, 67%);
+}
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  font-family: "Karla";
+  font-size: 1rem;
+}
+
+.price-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-component {
+  width: 640px;
+  height: 430px;
+  min-width: 350px;
+  background-color: aqua;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 45% 55%;
+  box-shadow: 0px 8px 10px var(--Grayish--Blue);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.info {
+  padding: 2rem;
+}
+
+/* Join */
+.comunity {
+  background-color: var(--Light--Gray);
+}
+.comunity .info h1 {
+  color: var(--Cyan);
+  margin-bottom: 1rem;
+}
+
+.comunity .info h2 {
+  color: var(--Bright--Yellow);
+  margin-bottom: 0.7rem;
+}
+.comunity .info p {
+  color: var(--Grayish--Blue);
+}
+/* Susbcribe */
+.subscription {
+  background-color: var(--Cyan);
+  grid-column-start: 1;
+  border-bottom-left-radius: 10px;
+}
+.subscription .info h3 {
+  color: var(--Light--Gray);
+  margin-bottom: 1rem;
+}
+
+.subscription .info h4,
+p {
+  color: var(--Light--Gray);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.subscription .info span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subscription .info a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 20%;
+  background-color: var(--Bright--Yellow);
+  border-radius: 10px;
+  margin-top: 1rem;
+  color: var(--Light--Gray);
+}
+
+/* Why us */
+.why-us .info h3 {
+  color: var(--Light--Gray);
+  margin-bottom: 1rem;
+}
+.why-us .info p {
+  color: var(--Light--Gray);
+  /* padding-bottom: 23rem; */
+}
+/* Responsive */
+
+@media screen and (max-width: 650px) {
+  .price-component {
+    max-width: 375px;
+    min-height: 750px;
+    grid-template-rows: 40% 30% 30%;
+  }
+  .subscription {
+    border-bottom-left-radius: 0px;
+  }
+  .grid-container {
+    grid-template-columns: 100%;
+  }
+}
