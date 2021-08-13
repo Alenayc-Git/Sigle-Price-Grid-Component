@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Price Component](https://your-solution-url.com)
+- Solution URL: [Price Component](https://sigle-price-grid-component-alenayc.netlify.app/)
 
 ## My process
 
